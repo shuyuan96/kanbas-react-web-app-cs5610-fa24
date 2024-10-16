@@ -1,9 +1,9 @@
 import React from 'react';
-import Kanbas from './Kanbas';
 import './App.css';
-import Labs from "./Labs";
-import LandingPage from './LandingPage';
-import { HashRouter, Route, Routes, Navigate } from 'react-router-dom';
+import Labs from './Labs';
+import Kanbas from './Kanbas';
+import Landing from './Landing';
+import { HashRouter, Routes, Route, Link, Navigate } from 'react-router-dom';
 
 function App() {
   return (
@@ -11,8 +11,8 @@ function App() {
     <HashRouter>
       <div>
         <Routes>
-          <Route path="/" element={<Navigate to="LandingPage"/>}/> 
-          <Route path="/LandingPage/*" element={<LandingPage />} />
+          <Route path="/" element={<Navigate to="Landing"/>}/> 
+          <Route path="/Landing/*" element={<Landing />} />
           <Route path="/Labs/*" element={<Labs />} />
           <Route path="/Kanbas/*" element={<Kanbas />} />
         </Routes>

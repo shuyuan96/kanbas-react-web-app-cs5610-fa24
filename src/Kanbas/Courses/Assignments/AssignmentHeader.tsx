@@ -6,8 +6,8 @@ export default function AssignmentHeader() {
     <div className="d-title d-flex justify-content-between align-items-center p-3 ps-2 bg-secondary">
       <div className="d-flex">
         <BsGripVertical className="me-2 fs-3" />
-        <a id="wd-assignments-title" className="h3 text-decoration-none">
-          <strong>ASSIGNMENTS</strong>
+        <a href="/assignments" id="wd-assignments-title" className="h3 text-decoration-none">
+            <strong>ASSIGNMENTS</strong>
         </a>
       </div>
       <AssignmentsTitleButtons />
