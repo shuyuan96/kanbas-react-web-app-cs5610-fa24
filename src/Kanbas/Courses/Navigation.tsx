@@ -1,8 +1,7 @@
-import { NavLink, useParams, useLocation } from "react-router-dom";
-
+import { NavLink, useParams } from "react-router-dom";
 export default function CoursesNavigation() {
     const { cid } = useParams();
-    const { pathname } = useLocation();
+
     const links = ["Home", "Modules", "Piazza", "Zoom", "Assignments", "Quizzes", "Grades", "People"];
 
     return (

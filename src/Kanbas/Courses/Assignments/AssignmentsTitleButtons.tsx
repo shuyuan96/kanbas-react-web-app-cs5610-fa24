@@ -1,12 +1,14 @@
 import { IoEllipsisVertical } from "react-icons/io5";
-import {BsPlus} from "react-icons/bs"
+import { BsPlus } from "react-icons/bs"
 import "./styles.css"
 export default function AssignmentsTitleButtons() {
   return (
-    <div>
-      <span className="col-2 p-2 fs-6 border border-1 border-secondary custom-border-radius">40% of Total</span>
-      <BsPlus className="fs-4"/>
+    <div className="float-end d-flex align-items-center">
+      <div className="border border-dark rounded-pill px-3 py-1 me-2">
+        40% of Total
+      </div>
+      <BsPlus className="fs-4 me-2" />
       <IoEllipsisVertical className="fs-4" />
-    </div> 
+    </div>
   )
 }
