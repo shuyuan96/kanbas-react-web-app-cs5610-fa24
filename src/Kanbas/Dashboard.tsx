@@ -147,13 +147,9 @@ function CourseCard({
           className="wd-dashboard-course-link text-decoration-none text-dark"
         >
           <img
-            src={`/images/${course._id}.jpg`}
+            src={`/images/courses/${course.image}`}
             width="100%"
             height={160}
-            alt={course.name}
-            onError={(e) => {
-              e.currentTarget.src = '/images/placeholder.jpg'; // Fallback image if specific course image is missing
-            }}
           />
           <div
             className="card-body"
